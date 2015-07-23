@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: workstation
+# Cookbook Name:: workstation_home
 # Recipe:: motd
 #
-# Copyright (c) 2015 The Authors, All Rights Reserved.
+# Copyright (c) 2015 Tim Beeler, All Rights Reserved.
 file "/etc/motd" do
   content "Welcome to a Chef Managed Host! Host details:
   IPADDRESS: #{node["ipaddress"]}

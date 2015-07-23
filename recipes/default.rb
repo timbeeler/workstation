@@ -1,7 +1,7 @@
 #
-# Cookbook Name:: workstation
+# Cookbook Name:: workstation_home
 # Recipe:: default
 #
-# Copyright (c) 2015 The Authors, All Rights Reserved.
+# Copyright (c) 2015 Tim Beeler, All Rights Reserved.
 
-include_recipe "workstation::motd"
+include_recipe "workstation_home::motd"

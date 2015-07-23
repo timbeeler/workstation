@@ -1,8 +1,8 @@
-name             'workstation'
-maintainer       'The Authors'
-maintainer_email 'you@example.com'
+name             'workstation_home'
+maintainer       'Tim Beeler'
+maintainer_email 'timothybeeler@me.com'
 license          'all_rights'
-description      'Installs/Configures workstation'
-long_description 'Installs/Configures workstation'
+description      'Installs/Configures workstation_home'
+long_description 'Installs/Configures workstation_home'
 version          '0.1.0'
 

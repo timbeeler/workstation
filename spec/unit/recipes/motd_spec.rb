@@ -1,12 +1,12 @@
 #
-# Cookbook Name:: workstation
+# Cookbook Name:: workstation_home
 # Spec:: default
 #
-# Copyright (c) 2015 The Authors, All Rights Reserved.
+# Copyright (c) 2015 Tim Beeler, All Rights Reserved.
 
 require 'spec_helper'
 
-describe 'workstation::motd' do
+describe 'workstation_home::motd' do
 
   context 'When all attributes are default, on an unspecified platform' do
 

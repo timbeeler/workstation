@@ -12,5 +12,5 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[workstation::default]
+      - recipe[workstation_home::default]
     attributes:
