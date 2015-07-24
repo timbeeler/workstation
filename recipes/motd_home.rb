@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: workstation_home
-# Recipe:: motd
+# Recipe:: motd_home
 #
 # Copyright (c) 2015 Tim Beeler, All Rights Reserved.
 file "/etc/motd" do

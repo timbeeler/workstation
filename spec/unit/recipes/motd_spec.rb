@@ -6,7 +6,7 @@
 
 require 'spec_helper'
 
-describe 'workstation_home::motd' do
+describe 'workstation_home::motd_home' do
 
   context 'When all attributes are default, on an unspecified platform' do
 
