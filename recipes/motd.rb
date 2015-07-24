@@ -4,11 +4,10 @@
 #
 # Copyright (c) 2015 Tim Beeler, All Rights Reserved.
 file "/etc/motd" do
-  content "Welcome to a Chef Managed Host! Host details:
-  IPADDRESS: #{node["ipaddress"]}
+  content "Welcome home! Host details:
   HOSTNAME: #{node["hostname"]}
   Memory: #{node["memory"]["total"]}
-  CPU: #{node["cpu"]["model_name"]}
+  Uptime: #{node["uptime"]}
 "
   mode "0644"
   action :create
