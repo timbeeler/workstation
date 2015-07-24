@@ -3,7 +3,7 @@
 # Recipe:: sshd_config_home
 #
 # Copyright (c) 2015 Tim Beeler, All Rights Reserved.
-file "/etc/sshd_config" do
+template '/etc/sshd_config' do
   source 'sshd_config.erb'
   owner 'root'
   group 'wheel'
