@@ -1,0 +1,49 @@
+#sshd_config_home
+#This file was created by Chef, changes will be over written
+
+# Protocol
+Protocol 2
+
+# Pre Authentication optins:
+
+LoginGraceTime 30
+#PermitRootLogin no
+StrictModes yes
+MaxAuthTries 1
+#MaxSessions 10
+UseDNS no
+SyslogFacility AUTHPRIV
+IgnoreRhosts yes
+PermitEmptyPasswords no
+UsePAM yes
+
+#Logging
+LogLevel VERBOSE
+
+#key location
+AuthorizedKeysFile  .ssh/authorized_keys
+
+# Change to no to disable s/key passwords
+ChallengeResponseAuthentication no
+
+# Kerberos options
+KerberosAuthentication no
+KerberosOrLocalPasswd yes
+KerberosTicketCleanup yes
+
+# GSSAPI options
+GSSAPIAuthentication no
+GSSAPICleanupCredentials yes
+GSSAPIStrictAcceptorCheck yes
+GSSAPIKeyExchange no
+
+UsePrivilegeSeparation sandbox
+
+#Post authincation options
+PrintMotd yes
+PrintLastLog yes
+AcceptEnv LANG LC_*
+
+# override default of no subsystems
+Subsystem sftp  /usr/libexec/sftp-server
+
