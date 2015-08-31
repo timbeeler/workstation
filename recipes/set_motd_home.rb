@@ -1,11 +1,11 @@
 #
 # Cookbook Name:: workstation_home
-# Recipe:: homebrew_home
+# Recipe:: set_motd_home
 #
 # Copyright (c) 2015 Tim Beeler, All Rights Reserved.
 
-cron 'archey > /etc/motd' do
-  hour '*/1'
-  command 'archey > /etc/motd'
-  user 'root'
+cron 'archey' do
+  hour '*/2'
+  command '/usr/local/bin/archey > /etc/motd'
+  action :create
 end
