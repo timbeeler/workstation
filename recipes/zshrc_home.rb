@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: workstation_home
-# Recipe:: authorized
+# Recipe:: zshrc_home
 #
 # Copyright (c) 2015 Tim Beeler, All Rights Reserved.
 
