@@ -1,0 +1,7 @@
+log_level               :auto
+log_location            STDOUT
+chef_server_url         "https://manage.chef.io/organizations/<%= node[:chef_client][:organization] %>"
+validation_client_name  "<%= node[:chef_client][:organization] %>-validator"
+ssl_verify_mode         :verify_peer
+
+# Using default node name (fqdn)
