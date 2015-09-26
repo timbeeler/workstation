@@ -6,11 +6,12 @@
 
 homebrew_tap 'caskroom/cask'
 
-package "brew-cask" do
+package 'brew-cask' do
+  homebrew_user 'tim'
   action [:install, :upgrade]
   end
 
-casks = %w{
+cks = %w{
   google-chrome
   dropbox
   vagrant
@@ -22,11 +23,12 @@ casks = %w{
   gpgtools
 }
 
-homebrew_cask do |casks|
+homebrew_cask do |cks|
+  homebrew_user 'tim'
   action [:install, :upgrade]
 end
 
-brews =%w{
+brw =%w{
   pinentry
   ddrescue
   chkrootkit
@@ -35,6 +37,7 @@ brews =%w{
   archey
 }
 
-homebrew_package do |brews|
+homebrew_package do |brw|
+  homebrew_user 'tim'
   action [:install, :upgrade]
 end
