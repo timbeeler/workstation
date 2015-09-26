@@ -8,36 +8,45 @@ homebrew_tap 'caskroom/cask'
 
 package 'brew-cask' do
   homebrew_user 'tim'
-  action [:install, :upgrade]
+  action [:install]
   end
 
-cks = %w{
-  google-chrome
-  dropbox
-  vagrant
-  sublime-text
-  github
-  divvy
-  iterm2
-  base
-  gpgtools
-}
+homebrew_cask 'google-chrome'
+homebrew_cask 'dropbox'
+homebrew_cask 'vagrant'
+homebrew_cask 'sublime-text'
+homebrew_cask 'github'
+homebrew_cask 'divvy'
+homebrew_cask 'iterm2'
+homebrew_cask 'base'
+homebrew_cask 'gpgtools'
 
-homebrew_cask do |cks|
+homebrew_package 'pinentry' do
   homebrew_user 'tim'
-  action [:install, :upgrade]
+  action [:install]
 end
 
-brw =%w{
-  pinentry
-  ddrescue
-  chkrootkit
-  gpg-agent
-  nmap
-  archey
-}
-
-homebrew_package do |brw|
+homebrew_package 'ddrescue' do
   homebrew_user 'tim'
-  action [:install, :upgrade]
+  action [:install]
+end
+
+homebrew_package 'chkrootkit' do
+  homebrew_user 'tim'
+  action [:install]
+end
+
+homebrew_package 'gpg-agent' do
+  homebrew_user 'tim'
+  action [:install]
+end
+
+homebrew_package 'nmap' do
+  homebrew_user 'tim'
+  action [:install]
+end
+
+homebrew_package 'archey' do
+  homebrew_user 'tim'
+  action [:install]
 end
