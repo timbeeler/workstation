@@ -5,7 +5,6 @@
 # Copyright (c) 2015 Tim Beeler, All Rights Reserved.
 
 cron 'chef-client' do
-  hour '*/59'
+  minute '30'
   command 'chef-client'
-  user 'root'
 end

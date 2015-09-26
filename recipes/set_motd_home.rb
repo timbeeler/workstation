@@ -4,8 +4,8 @@
 #
 # Copyright (c) 2015 Tim Beeler, All Rights Reserved.
 
-cron 'archey' do
-  hour '*/2'
+cron 'homebrew' do
+  minute '5'
   command '/usr/local/bin/archey > /etc/motd'
-  action :create
+  user 'tim'
 end
