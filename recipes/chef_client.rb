@@ -6,5 +6,5 @@
 
 cron 'chef-client' do
   minute '30'
-  command 'chef-client'
+  command '/usr/local/bin/chef-client'
 end
