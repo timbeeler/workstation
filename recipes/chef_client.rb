@@ -5,6 +5,6 @@
 # Copyright (c) 2015 Tim Beeler, All Rights Reserved.
 
 cron 'chef-client' do
-  minute '30'
+  time :hourly
   command '/usr/local/bin/chef-client'
 end
