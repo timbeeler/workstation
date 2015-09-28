@@ -4,10 +4,6 @@ maintainer_email 'timothybeeler@me.com'
 license          'all_rights'
 description      'Installs/Configures workstation_home'
 long_description 'Installs/Configures workstation_home'
-<<<<<<< HEAD
-version          '0.6.3'
-=======
-version          '0.6.2'
->>>>>>> origin/master
+version          '0.6.4'
 
 depends 'homebrew', '~> 1.13.0'

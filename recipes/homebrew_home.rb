@@ -21,6 +21,7 @@ homebrew_cask 'iterm2'
 homebrew_cask 'base'
 homebrew_cask 'gpgtools'
 homebrew_cask 'atom'
+homebrew_cask 'sequel-pro'
 
 homebrew_package 'pinentry' do
   homebrew_user 'tim'
