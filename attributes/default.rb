@@ -1,4 +1,4 @@
-default[:chef_client][:bin]           = "/usr/bin/chef-client"
+default[:chef_client][:bin]           = "/usr/local/bin/chef-client"
 default[:chef_client][:log]           = "/var/log/chef/client.log"
 default[:chef_client][:config]        = "/etc/chef/client.rb"
 default[:chef_client][:interval]      = 1800
